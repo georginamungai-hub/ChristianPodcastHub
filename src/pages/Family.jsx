@@ -36,16 +36,18 @@ const FamilyPod =()=>{
             <button className='google1 w-8 h-8 rounded-lg'><img src="src\assets\google.png" alt="google" /></button>
         </div>
         <div className='contentSec'>
-        <div className='secondSocials flex flex-col gap-2 '>
-            <button className='spotify2 w-40 h-8 rounded-md bg-black'></button>
-            <button className='apple2 w-40 h-8 rounded-md bg-black'></button>
-            <button className='google2 w-40 h-8 rounded-md bg-black'></button>
+        <div className='secondSocials flex flex-col gap-4 '>
+            <button className='spotify2 w-40 h-10 rounded-md bg-amber-500 text-cyan-600'><b>Spotify</b></button>
+            <button className='apple2 w-40 h-10 rounded-md bg-amber-500 text-cyan-600'><b>Apple</b></button>
+            <button className='google2 w-40 h-10 rounded-md bg-amber-500 text-cyan-600'><b>Google Podcasts</b></button>
         </div>
+        <div className='secondColumn'>
         <div className='latestEpisodes'><h1>Latest episodes</h1></div>
-        <div>
-            <div className='preview1'></div>
-            <div className='preview2'></div>
-            <div className='preview3'></div>
+        <div className='flex flex-col gap-6'>
+            <div className='preview1 bg-black h-28 w-100 rounded-md'>Hello</div>
+            <div className='preview2 bg-black h-28 w-100 rounded-md'>Hello</div>
+            <div className='preview3 bg-black h-28 w-100 rounded-md'>Hello</div>
+        </div>
         </div>
         </div>
         </>

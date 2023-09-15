@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Tourney:ital,wght@0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&family=Tourney:ital,wght@0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&family=Oswald:wght@700&family=Tourney:ital,wght@0,900;1,300&display=swap');
+.wholePage{
+    background-color: rgb(252, 252, 252);
+    width: auto;
+}
+.mainText1 {
+    align-content: center;
+    justify-content: center;
+    color: #000;
+    place-items: center;
+}
+.mainText1 p{
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+   
+
+}
+.mainText1 h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    
+}
+.mainGrid{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding-left: 250px;
+    /* padding-right: 250px; */
+    /* columns: 2; */
+    /* width: 80%;
+    height: 560px;
+    align-content: center;
+    align-self: center;  */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+.family{
+    display: flex;
+    /* flex-direction: row; */
+    row-gap: 2px;
+    background-color: rgb(252, 252, 252);
+    width:350px;
+    height:200px;
+}
+.familyimg{
+    width: 50%;
+    height: 100%;
+}
+.family h2{
+    background-color: rgb(252, 252, 252);
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+}
+.family button{
+    height: 100%;
+    padding-top: 100px;
+    /* background-color:rgb(252, 252, 252) ;
+    border-radius: 50%; */
+
+}
+.friendships{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2px;
+    background-color: rgb(252, 252, 252);
+    width:350px;
+    height:200px;
+}
+.friendshipsimg{
+    width: 50%;
+    height: 100%;
+}
+.friendships h2{
+    background-color: rgb(252, 252, 252);
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+}
+.friendships button{
+    height: 100%;
+    padding-top: 100px;
+}
+.marriage{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2px;
+    background-color: rgb(252, 252, 252);
+    width:350px;
+    height:200px;
+}
+.marriageimg{
+    width: 50%;
+    height: 100%;
+}
+.marriage h2{
+    background-color: rgb(252, 252, 252);
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+}
+.marriage button{
+    height: 100%;
+    padding-top: 100px;
+}
+.spiritualGifts{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2px;
+    background-color: rgb(252, 252, 252);
+    width:350px;
+    height:200px;
+}
+.spiritualGiftsimg{
+    width: 50%;
+    height: 100%;
+}
+.spiritualGifts h2{
+    background-color: rgb(252, 252, 252);
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+}
+.spiritualGifts button{
+    height: 100%;
+    padding-top: 100px;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2px;
+    background-color: rgb(252, 252, 252);
+    width:350px;
+    height:200px;
+}
+.serviceimg{
+    width: 50%;
+    height: 100%;
+}
+.service h2{
+    background-color: rgb(252, 252, 252);
+    font-size: large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    letter-spacing: 5px;
+}
+.service button{
+    height: 100%;
+    padding-top: 100px;
+}

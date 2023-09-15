@@ -6,6 +6,8 @@ import SpiritualGifts from './pages/SpiritualGifts'
 import Marriage from './pages/Marriage'
 import Service from './pages/Service'
 import Friendships from './pages/Friendships'
+import Categories from './pages/categories'
+import Favourites from './pages/favourites'
 import './cssFiles/index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -34,6 +36,14 @@ const routes = createBrowserRouter([
     path:'/friendships',
     element: <Friendships/>
   },
+  {
+    path: '/categories',
+    element: <Categories/>
+  },
+  {
+    path: '/favourites',
+    element: <Favourites/>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,7 +1,23 @@
+import { useState } from 'react'
 import '../cssFiles/friendships.css'
 import '../cssFiles/navBar.css'
 import { Link } from 'react-router-dom'
+import podcasts from '../jsonFiles/withThePerrys.json'
 const friendshipsPod =()=>{
+    const[fav,setFav] = useState([]);
+    const truncateText = (text, maxLength = 50) =>{
+        if (text.length > maxLength) {
+            return text.substring(0, maxLength) + "..."
+        }
+        return text
+    }
+    const addTofav = (liked)=>{
+        const newFavs = [...fav,liked]
+        localStorage.setItem('favPodcasts',JSON.stringify(newFavs))
+        setFav(newFavs)
+
+
+    }
     return(
         <>
         <div>
@@ -22,31 +38,24 @@ const friendshipsPod =()=>{
                 </div>
             </nav>
         </div>
-        <div className='topImage'>
-            <img src="src\assets\podcastmic.jpg" alt="podcastmic" />
-        </div>
-        <div className='text'>
-            <h1>Friday Goss with Gideon</h1>
-            <p>A podcast about skills, job search and the technicalities of enterprenurship</p>
-        </div>
-        <div className='firstSocials'>
-            <h5><b>Listen on</b></h5>
-            <button className='spotify1 w-8 h-8 rounded-lg'><img src="src\assets\spotify.png" alt="spotify" /></button>
-            <button className='apple1 w-8 h-8 rounded-lg'><img src="src\assets\apple.png" alt="apple" /></button>
-            <button className='google1 w-8 h-8 rounded-lg'><img src="src\assets\google.png" alt="google" /></button>
-        </div>
-        <div className='contentSec'>
-        <div className='secondSocials'>
-            <button className='spotify2 w-40 h-8 rounded-md bg-black'></button>
-            <button className='apple2 w-40 h-8 rounded-md bg-black'></button>
-            <button className='google2 w-40 h-8 rounded-md bg-black'></button>
-        </div>
-        <div className='latestEpisodes'><h1>Latest episodes</h1></div>
-        <div>
-            <div className='preview1'></div>
-            <div className='preview2'></div>
-            <div className='preview3'></div>
-        </div>
+        <div className='mainContent'>
+            {
+                podcasts.map((podcast,index)=>{
+                    return(
+                        <div key={index} className='podcast rounded-md'>
+                <div className='begin'>
+                    <img src="src\assets\podcast1.jpg" alt="" />
+                    <h3>{podcast.title}</h3>
+                    <p onClick={()=>addTofav(podcast)}>Like</p>
+                </div>
+                <div className='playerSection'>
+                    <p>{truncateText(podcast.description)}</p>
+                    <a href={podcast.audio}><img src="src\assets\player3.png" alt="" /></a>
+                </div>
+            </div>
+                    )
+                })
+            }
         </div>
         </>
     )

@@ -2,43 +2,52 @@
 *{
     background-color: #EADBC2;
 }
-.topImage{
+.mainContent{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
     width: 100%;
+    height: 100%;
+    place-items: center;
 }
-.topImage img{
-    width: 170px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 88%;
+.playerSection{
+    display: flex;
+    gap: 5px;
+    background-color: #EADBC2;
+    width: 100%;
+    /* justify-content: end; */
 }
-.text p{
-    width: auto;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+.playerSection img{
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+
+}
+.playerSection p{
+    font-size: medium;
+    font-weight: lighter;
+    color: #43022C;
+    font-family:'Tourney', cursive;;
+}
+.podcast{
+    width:250px;
+    height:200px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 5px;
+    border-color:#008080 ;
     
 }
-.text h1{
-    width: auto;
-    text-align: center;
-    font-family: 'Tourney', cursive;
-    font-weight: bolder;
-    font-size: 90px;
-}
-.firstSocials{
+.begin{
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    height: fit-content;
+    flex-direction: column;
 }
-
-.latestEpisodes{
-    text-align: center;
+.begin img{
+    width: 50%;
+    height: 100%;
 }
-.contentSec{
-    columns: 2;
-}
-.secondSocials{
-    display: block;
+.begin h3{
+    font-size: medium;
+    font-weight: bold;
 }

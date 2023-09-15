@@ -10,8 +10,8 @@ const navigation = ()=>{
             </div>
             <div className="options">
                 <Link to='/'>Home</Link>
-                <p>Categories</p>
-                <p>Featured</p>
+                <Link to='/categories'>Categories</Link>
+                <Link to='/favourites'>Favourites</Link>
             </div>
             <div className="searchButton">
                 <input type="text" placeholder="Search" className="bg-white rounded-full" />
