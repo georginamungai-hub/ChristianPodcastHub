@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './pages/Home'
-import Family from './pages/Family'
-import SpiritualGifts from './pages/SpiritualGifts'
-import Marriage from './pages/Marriage'
-import Service from './pages/Service'
-import Friendships from './pages/Friendships'
+import PaulWasher from './pages/PaulWasher'
+import RcSproul from './pages/RcSproul'
+import TimothyKeller from './pages/TimothyKeller'
+import JohnMacarthur from './pages/JohnMacarthur'
+import WithThePerrys from './pages/WithThePerrys'
 import Categories from './pages/categories'
 import Favourites from './pages/favourites'
+import Error from './components/Error'
+import WatchHistory from './pages/WatchHistory'
 import './cssFiles/index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -17,24 +19,24 @@ const routes = createBrowserRouter([
     element: <Home/>
   },
   {
-    path:'/family',
-    element: <Family/>
+    path:'/paulWasher',
+    element: <PaulWasher/>
   },
   {
-    path:'/spiritualgifts',
-    element: <SpiritualGifts/>
+    path:'/rcSproul',
+    element: <RcSproul/>
   },
   {
-    path:'/marriage',
-    element: <Marriage/>
+    path:'/timothyKeller',
+    element: <TimothyKeller/>
   },
   {
-    path:'/service',
-    element: <Service/>
+    path:'/johnMacarthur',
+    element: <JohnMacarthur/>
   },
   {
-    path:'/friendships',
-    element: <Friendships/>
+    path:'/withThePerrys',
+    element: <WithThePerrys/>
   },
   {
     path: '/categories',
@@ -42,7 +44,12 @@ const routes = createBrowserRouter([
   },
   {
     path: '/favourites',
-    element: <Favourites/>
+    element: <Favourites/>,
+    errorElement: <Error/>
+  },
+  {
+    path:'/watchHistory',
+    element:<WatchHistory/>
   }
 ])
 

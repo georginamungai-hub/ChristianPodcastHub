@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react"
-
+import podcasts from '../jsonFiles/withThePerrys.json'
+import React from "react"
 const Favourites =()=>{
     const[podcasts,setPodcast]= useState([])
     const truncateText = (text, maxLength = 50) =>{
@@ -17,6 +18,25 @@ const Favourites =()=>{
         fetchFavs()
     },[])
     return(
+        <>
+        <div>
+        <nav>
+            <div className="main">
+            <div className="begin">
+            <img src="src\assets\soundwave2.png" alt="soundwave" className="w-2/3" />
+            <p>PODCAST</p>
+            </div>
+            <div className="options">
+                <Link to='/'>Home</Link>
+                <Link to='/categories'>Categories</Link>
+                <Link to='/favourites'>Favourites</Link>
+            </div>
+            <div className="searchButton">
+                <input type="text" placeholder="Search" className="bg-white rounded-full" />
+            </div>
+            </div>
+        </nav>
+        </div>
         <div className='mainContent'>
             {
                 podcasts.map((podcast,index)=>{
@@ -25,7 +45,7 @@ const Favourites =()=>{
                 <div className='begin'>
                     <img src="src\assets\podcast1.jpg" alt="" />
                     <h3>{podcast.title}</h3>
-                    <p onClick={()=>addTofav(podcast)}>Like</p>
+                    <button onClick={()=>addTofav(podcast)} className='w-10 h-10'><img src="src\assets\like.png" alt="Like" /></button>
                 </div>
                 <div className='playerSection'>
                     <p>{truncateText(podcast.description)}</p>
@@ -36,6 +56,7 @@ const Favourites =()=>{
                 })
             }
         </div>
+        </>
     )
 }
 export default Favourites

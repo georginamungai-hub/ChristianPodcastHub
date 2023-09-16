@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,300&display=swap');
+/* *{
+    background-color: #EADBC2;
+} */
+.mainPage{
+    columns: 2;
+}
+/* .mainPart{
+    /* width: 90%; */
+/* } */
+.topImage{
+    width: 100%;
+}
+.topImage img{
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 88%;
+    
+}
+.text p{
+    width: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+.text h1{
+    width: auto;
+    text-align: center;
+    font-family: 'Tourney', cursive;
+    font-weight: bolder;
+    font-size: 90px;
+}
+.firstSocials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: fit-content;
+}
+
+.latestEpisodes{
+    text-align: center;
+    /* padding-bottom: 10px; */
+    color:  #43022C;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.latestEpisodes h1{
+    text-align: left;
+}
+.contentSec{
+    columns: 2;
+    column-gap: 0px;
+    margin-left: 80px;
+    margin-right: 150px;
+    width: 80%;
+    height: 550px;
+    column-width: 40%;
+    justify-content: center;
+     padding-top:20px ;
+    
+}
+.secondSocials{
+ height: 100%;
+ width: 100%;
+ padding-left: 100px;
+ padding-top: 80px;
+ /* background-color:  #FFC53D; */
+}
+
+.secondColumn{
+    height: 100%;
+    width: 100% ;
+    /* padding-top:20px ; */
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    
+}
+.preview1{
+    display: flex;
+    background-color: #FCFCFC;
+}
+.firstImage{
+    background-color: #FCFCFC;
+}
+.firstImage img{
+    width: 90px;
+    height: 90px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.secondSegment{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: #FCFCFC;
+}
+.secondSegment h2{
+    font-weight: bolder;
+    font-size: larger;
+    color: #43022C;
+    padding-bottom: 48px;
+    background-color: #FCFCFC;
+}
+.lastImage{
+    display: flex;
+    padding-left: 300px;
+    background-color: #FCFCFC;
+    align-items: center;
+}
+.lastImage h3{
+    font-weight: bold;
+    font-size: medium;
+    color: #43022C;
+    background-color: #FCFCFC;
+}
+.lastImage button{
+    background-color: #FCFCFC;
+    
+}
+.lastImage button img{
+    background-color: #FCFCFC;
+}
+.topImage2{
+    width: 100%;
+}
+.topImage2 img{
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 88%;
+    
+}

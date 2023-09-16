@@ -10,8 +10,8 @@ function Home() {
     <>
       <NavBar/> 
       <Content/>
-      <MiddleBar/>
-      <Player/>
+      {/* <MiddleBar/>
+      <Player/> */}
     </>
   )
 }
